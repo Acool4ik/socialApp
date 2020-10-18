@@ -1,0 +1,173 @@
+@import "~bootstrap/dist/css/bootstrap.min.css";
+
+/* styles for svg icons in auth navigation */
+.ux-icon {  
+    display: inline-block;
+    cursor: pointer;
+}
+
+.active {
+    border-bottom-width: 3px;
+    border-bottom-style: solid;
+}
+
+
+/* auth footer attach to bottom */
+.footer-bottom {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* for correct displaing in auth form jointly darc theme in auth form */
+input:-internal-autofill-selected {
+    background-color: transparent !important;
+}
+
+
+/* reposition spinner in center */
+.spinner {
+    top: calc(50% - 16px);
+    left: calc(50% - 16px);
+}
+
+
+/* logo present styles for cssTransition librarie in parser */
+.my-logo-present-enter {
+    opacity: 0.4;
+}
+
+.my-logo-present-enter-active {
+    opacity: 1;
+    transition: opacity 1000ms;
+}
+
+
+/* needed container in parser */
+.mv-690px {
+    max-width: 690px;
+}
+
+.container-btns {
+    overflow-y: auto;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    display: grid;
+    flex-grow: 30px 30px;
+    justify-items: center;
+    align-items: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    max-width: 400px;
+    grid-auto-rows: minmax(80px, auto);
+}
+
+.container-btns::-webkit-scrollbar {
+    width: 0; 
+}
+
+
+/* circless buttons for parser password */
+.pass-btns {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 30px;
+}
+
+.btn-outline-castom {
+    padding: 8px 16px;
+    border-width: 0;
+    text-align: center !important;
+    outline: none;
+    margin: 5px 10px;
+    background-color: transparent;
+}
+
+
+/* cssTransition for modal */
+.modal-myself {
+    z-index: -1;
+    top: -30%;
+}
+
+.modal-myself-enter {
+    opacity: 0;
+    top: 10%;
+    z-index: 1000;
+}
+
+.modal-myself-enter-active {
+    opacity: 1;
+    top: 35%;
+    transition: all 400ms;
+}
+
+.modal-myself-enter-done {
+    opacity: 1;
+    top: 35%;
+    z-index: 1000;
+}
+
+
+/* container scrollbar decoration  */
+.scrollbar-decoration {
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.scrollbar-decoration::-webkit-scrollbar {
+    width: 0; 
+}
+
+/* sidebar */ 
+.sidebar-castom {
+    height: 50%;
+    position: absolute;
+    width: 50%;
+    border-left: 1px solid #fff;
+    right: 0;
+}
+
+/* avatar sizes */
+.avatar-sizes {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    border-width: 1px;
+    border-style: solid;
+    margin: 5px;
+}
+
+/* disabled underline */
+.disabled-underline {
+    text-decoration: none;
+}
+
+.disabled-underline:hover {
+    text-decoration: none;
+}
+
+/* smart height */
+.smart-height {
+    height: calc(100% - 208px);
+}
+
+/* gallery container grid */
+.gallery-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(130px, 1fr));
+    align-items: center;
+    justify-items: center;
+    /* grid-template-rows: repeat(auto-fit, 150px); */
+    grid-row-gap: 7px;
+    grid-column-gap: 7px;
+}
+
+
+
+
+
+
+
